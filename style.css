@@ -832,8 +832,8 @@ a{
 
 @media screen and (max-width: 800px){
     .uputstva .container{
-    height: 35vh;
-    width: 90%;
+    height: 36vh;
+    width: 95%;
 }
 .uputstva .container .row{
     display: flex;
@@ -845,6 +845,7 @@ a{
     flex: 0 0 0%;
     border-radius: 10px;
     width: 100%;
+    margin: 0 auto;
     height: 100%;
     position: relative;
     order:-1
@@ -1079,7 +1080,7 @@ a{
 @media screen and (max-width: 800px){
     /* Action */
     .action .container{
-        width: 90%;
+        width: 100%;
     }
 .action .container .title{
     text-align: center;
