@@ -221,7 +221,7 @@ a{
 
 /*********RESPONSIVE**************/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     /*TOP BAR*/
 
 .top-bar{
@@ -382,7 +382,7 @@ a{
 
 /*********RESPONSIVE 1080px**************/
 
-@media screen and (max-width: 1080px) and (min-width: 605px) {
+@media screen and (max-width: 1080px) and (min-width: 800px) {
     
    /*TOP BAR*/ 
     
@@ -830,7 +830,7 @@ a{
 
 /***********RESPONSIVE***********/
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .uputstva .container{
     height: 35vh;
     width: 90%;
@@ -936,7 +936,7 @@ a{
 
 }
 
-@media screen and (max-width: 1080px) and (min-width: 701px){
+@media screen and (max-width: 1080px) and (min-width: 800px){
     .uputstva .container{
     width: 95%;
     height: 15vh;
@@ -1076,7 +1076,7 @@ a{
 
 /***********RESPONSIVE***********/
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     /* Action */
     .action .container{
         width: 90%;
@@ -1119,7 +1119,7 @@ a{
 }
 }
 
-@media screen and (max-width: 1080px) and (min-width: 700px){
+@media screen and (max-width: 1080px) and (min-width: 800px){
      .action .container{
         width: 95%;
     }
@@ -1187,7 +1187,7 @@ a{
 
 /***********RESPONSIVE***********/
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .delivery{
     width: 100%;
     background: var(--green);
@@ -1230,7 +1230,7 @@ a{
     margin: 0 5px;
 }
 }
-@media screen and (max-width: 1600px) and (min-width: 700px){
+@media screen and (max-width: 1600px) and (min-width: 800px){
         .delivery{
     width: 95%;
     background: var(--green);
@@ -1286,7 +1286,7 @@ a{
 
 /***********RESPONSIVE***********/
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .about-us {
     background-image: linear-gradient(rgba(38, 38, 38, .7), rgba(38, 38, 38, .7)), url(img/about-us.jpg);
     background-size: cover;
@@ -1330,7 +1330,7 @@ a{
     border-radius: 10px;
 }
 }
-@media screen and (max-width: 1080px) and (min-width: 701px){
+@media screen and (max-width: 1080px) and (min-width: 801px){
         .about-us {
     background-image: linear-gradient(rgba(38, 38, 38, .7), rgba(38, 38, 38, .7)), url(img/about-us.jpg);
     background-size: cover;
@@ -1385,6 +1385,7 @@ a{
     padding: 40px 0px;
     background: var(--light);
     border-radius: 10px;
+    margin-top: 40px
 }
 .apoteke .naslov{
     text-align: center;
@@ -1442,7 +1443,7 @@ a{
 
 /***********RESPONSIVE***********/
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .apoteke{
         width: 100%;
     }    
@@ -1515,7 +1516,7 @@ a{
     margin-bottom: 20px;
 }
 }
-@media screen and (max-width: 1080px) and (min-width: 701px){
+@media screen and (max-width: 1080px) and (min-width: 801px){
     
 .apoteke {
     width: 100%;
@@ -1683,6 +1684,10 @@ footer .last-row p:last-child {
     }
 }
 @media (min-width: 801px) and (max-width: 1024px) {
+    footer {
+    background: var(--dark);
+    margin-top: 0px;
+}
     footer .row {
         width: 90%;
     }
@@ -1706,6 +1711,9 @@ footer .last-row p:last-child {
     }
 }
 @media (max-width: 800px) {
+    footer {
+    margin-top: 0px;
+}
     footer .row .col {
         flex: 0 0 100%;
     }
