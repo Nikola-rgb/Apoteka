@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Apoteka</title>
+    <!--    CSS styles-->
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--TOP BAR-->
+
+    <section class="top-bar">
+        <div class="logo-apoteke">
+            <img src="img/logo.png" alt="" class="img-fluid">
+            <h1>Apoteka <span>Medis Lek</span></h1>
+        </div>
+        <div class="nalog-social">
+            <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="nalog" onclick="myButton()">
+                <button class="button">Moj Nalog</button>
+                <i class="fas fa-chevron-circle-down"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TOGGLE NALOG -->
+
+    <div class="nalog-toggle" id="moj-toggle">
+        <ul>
+            <li>
+                <a href="">Moj nalog</a>
+            </li>
+            <li><a href="">Placanje</a></li>
+            <li><a href="">Prijavite se</a></li>
+        </ul>
+    </div>
+
+    <!--  LOGO I SEARCH-->
+
+    <section class="logo-i-search">
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="img/logo-2.png" alt=""></a>
+            </div>
+
+            <div class="poruka">
+                <h3 class="tipkajuciNaslov"></h3>
+            </div>
+
+
+            <div class="search">
+                <input type="text" placeholder="Pretraga">
+                <a href=""><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--NAVIGACIJA-->
+
+    <section class="navigacija">
+        <div class="hamburger-menu" onclick="humburger()">
+            <div class="line line-1">
+            </div>
+            <div class="line line-2">
+            </div>
+            <div class="line line-3">
+            </div>
+        </div>
+        <nav class="nav-bar" id="navToggle">
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item shop">
+                        <a href="" class="nav-link">Web shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Akcije</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="korpa-saveProducts">
+                    <div class="save">
+                        <a href=""><i class="far fa-heart"></i>Sačuvani Proizvodi (0)</a>
+                    </div>
+                    <div class="korpa">
+                        <a href="">Korpa<i class="fas fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!--CAROUSEL I WIDGET-->
+
+    <section class="uputstva">
+        <div class="container">
+            <div class="row">
+                <div class="widget">
+                    <h3 onclick="widgetClick()">Kategorije<i class="fas fa-caret-down"></i></h3>
+                    <ul id="widgetToggle">
+                        <li><a href="">Suplementi</a></li>
+                        <li><a href="">Higijena nega i kozmetika</a></li>
+                        <li><a href="">Mame, beba i deca</a></li>
+                        <li><a href="">Medicinska oprema</a></li>
+                        <li><a href="">Cajevi i boljni preparati</a></li>
+                    </ul>
+                </div>
+                <div class="img-slider">
+                    <div class="slide active">
+                        <img src="img/slide-1_edited.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide-2_edited.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/slide-3_edited.jpg" alt="">
+                    </div>
+                    <div class="navigation">
+                        <div class="btn active"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+
+                </div>
+
+                <div class="widget">
+                    <h3 onclick="widgetClick12()">Poslednje sa bloga<i class="fas fa-caret-down"></i></h3>
+                    <ul id="widgetToggle12">
+                        <li>
+                        <a href="">Novosti o Covid-19</a>
+                        </li>
+
+                        <li>
+                        <a href="">Cajevi i boljni preparati</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!--AKCIJA-->
+
+<div class="action">
+    <div class="container">
+        <div class="title">
+            <h4>Proizvodi na akciji</h4>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="image">
+                    <a href=""><img src="img/bioderma-1.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h4>Bioderma</h4>
+                    <p>2050 Din</p>
+                </div>
+            </div>
+            
+              <div class="item">
+                <div class="image">
+                    <a href=""><img src="img/bioderma-2.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h4>Bioderma</h4>
+                    <p>2050 Din</p>
+                </div>
+            </div>
+              <div class="item">
+                <div class="image">
+                    <a href=""><img src="img/bioderma-3.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h4>Bioderma</h4>
+                    <p>2050 Din</p>
+                </div>
+            </div>
+              <div class="item">
+                <div class="image">
+                    <a href=""><img src="img/eucerin-1.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h4>Eucerin</h4>
+                    <p>2050 Din</p>
+                </div>
+            </div>
+              <div class="item">
+                <div class="image">
+                    <a href=""><img src="img/eucerin-1.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h4>Eucerin</h4>
+                    <p>2050 Din</p>
+                </div>
+            </div>
+              <div class="item">
+                <div class="image">
+                    <a href=""><img src="img/eucerin-3.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h4>Eucerin</h4>
+                    <p>2050 Din</p>
+                </div>
+            </div>
+              <div class="item">
+                <div class="image">
+                    <a href=""><img src="img/vichy-1.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h4>Vichy</h4>
+                    <p>2050 Din</p>
+                </div>
+            </div>
+              <div class="item">
+                <div class="image">
+                   <a href=""> <img src="img/vichy-2.png" alt=""></a>
+                </div>
+                <div class="text">
+                    <h4>Bioderma</h4>
+                    <p>2050 Din</p>
+                </div>
+            </div>
+              <div class="item">
+                <div class="image">
+                   <a href=""> <img src="img/vichy-3.jpg" alt=""></a>
+                </div>
+                <div class="text">
+                    <h4>Bioderma</h4>
+                    <p>2050 Din</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- DELIVERY -->
+
+<div class="delivery container">
+    <div class="logo-dostava">
+        <i class="fas fa-truck"></i>
+    </div>
+    <div class="tekst">
+         <h4 class="naslov-tekst">Besplatna dostava za porudzbine preko <span> 5000 </span> din.</h4>
+    </div>
+</div>
+
+<!--  ABOUT US  -->
+<section class="about-us container">
+    <div class="first"></div>
+    <div class="second">
+        <h3>O nama</h3>
+        <hr>
+        <p>U Medis lek apotekama obezbeđen je kompletan asortiman registrovanih lekova, kako domaćih tako i uvoznih, a pacijentima je dostupan i veliki broj pomoćnih lekovitih sredstava, suplemenata, čajeva, hrane za bebe.</p>
+        <p>Posebno je veliki asortiman kozmetičkih proizvoda za negu lica i tela od različitih proizvođača: Avene, Vichy, Eucerin, RoC, Darphin, Bioderma, Noreva, Uriage, Phito, Liearac, Aderma, Klorane, Ducray, NeoStrata, Heliocare, Endocare ... ali i kozmetika za decu: Mustela, Uriage, Sebamed, Abcderm ...
+        </p>
+        <p>U Medis lek apotekama izdajemo lekove i medicinska pomagala (pelene, trake za merenjenivoa šećera u krvi, lancete, igle za insuline itd.) na recepte Republičkog fonda zdravstvenog osiguranja, kao i vojnim osiguranicima.</p>
+    </div>
+</section>
+
+<!-- APOTEKE -->
+
+<div class="apoteke container">
+    <div class="naslov">
+        <h2>Nalazimo se na sledecim lokacijama</h2>
+    </div>
+
+    <div class="linkovi">
+        <a onclick="ShowMedisLek()">Medis Lek</a>
+        <a onclick="ShowMedisLek1()">Medis Lek 1</a>
+        <a onclick="ShowMedisLek2()">Medis Lek 2</a>
+        <a onclick="ShowMedisLek3()">Medis Lek 3</a>
+    </div>
+
+    <div class="prikazi">
+        <div class="col-1">
+            
+            <div id="medis-lek">
+                <h2>Medis lek</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nemo beatae architecto provident voluptatibus doloremque necessitatibus modi eum assumenda deleniti distinctio veritatis dolore quisquam, natus expedita nam! Quidem, fugit minus?</p>
+            </div>
+
+             
+             <div id="medis-lek-1">
+                <h2>Medis lek 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nemo beatae architecto provident voluptatibus doloremque necessitatibus modi eum assumenda deleniti distinctio veritatis dolore quisquam, natus expedita nam! Quidem, fugit minus?</p>
+            </div>
+
+                
+                <div id="medis-lek-2">
+                    <h2>Medis lek 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nemo beatae architecto provident voluptatibus doloremque necessitatibus modi eum assumenda deleniti distinctio veritatis dolore quisquam, natus expedita nam! Quidem, fugit minus?</p>
+                </div>
+
+                    
+             <div id="medis-lek-3">
+                <h2>Medis lek 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nemo beatae architecto provident voluptatibus doloremque necessitatibus modi eum assumenda deleniti distinctio veritatis dolore quisquam, natus expedita nam! Quidem, fugit minus?</p>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div id="mlViewMape">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.8614706877!2d21.891284414790587!3d43.31715928211435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0b2208559bf%3A0x8db3dc1606576a84!2z0KLRgNCzINCf0LDQstC70LAg0KHRgtC-0ZjQutC-0LLQuNGb0LAgMTMsINCd0LjRiA!5e0!3m2!1ssr!2srs!4v1618771719006!5m2!1ssr!2srs" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="ml-1ViewMape">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.9743075961565!2d21.89028990819732!3d43.31794333817266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0b292c55e3f%3A0x25e42974ac554d11!2sApoteka%20Medislek%201!5e0!3m2!1ssr!2srs!4v1618824723431!5m2!1ssr!2srs" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="ml-2ViewMape">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d725.6985068243501!2d21.892278139482528!3d43.3185710267571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0b3b5a5e219%3A0x78d53ee16d586240!2sApoteka%20Medislek%202!5e0!3m2!1ssr!2srs!4v1618824906540!5m2!1ssr!2srs" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="ml-3ViewMape">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2052.5077925974506!2d21.8945125903726!3d43.32086659501725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0b6a051f4e9%3A0x18c18c436b383f25!2sApoteka%20MEDIS%20LEK!5e0!3m2!1ssr!2srs!4v1618824216535!5m2!1ssr!2srs" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  FOOTER  -->
+<footer>
+    <div class="row container">
+        <div class="col">
+            <h4>INFORMACIJE</h4>
+            <hr>
+            <ul>
+                <li><a href="">Uslovi korišćenja i prodaje</a></li>
+                <li><a href="">Privatnost</a></li>
+                <li><a href="">Uputstvo za registrovanje</a></li>
+                <li><a href="">Kolačići</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>KUPOVINA</h4>
+            <hr>
+            <ul>
+                <li><a href="">Kako kupiti</a></li>
+                <li><a href="">Dostava i plaćanje</a></li>
+                <li><a href="">Odustanak od kupovine</a></li>
+                <li><a href="">Reklamacije</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>PROIZVODI</h4>
+            <hr>
+            <ul>
+                <li><a href="">Proizvodi na akciji</a></li>
+                <li><a href="">Najnoviji proizvodi</a></li>
+                <li><a href="">Najprodavaniji proizvodi</a></li>
+                <li><a href="">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <h4>PRATITE NAS</h4>
+            <hr>
+            <ul>
+                <li><a href="">Blog postovi</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Instagram</a></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="last-row container">
+        <div class="card">
+            <a href=""><img src="img/visa-x.png" alt=""></a>
+            <a href=""><img src="img/maestro-x.png" alt=""></a>
+            <a href=""><img src="img/mastercard-x.png" alt=""></a>
+            <a href=""><img src="img/dina-x.png" alt=""></a>
+            <a href=""><img src="img/aik-x.png" alt=""></a>
+        </div>
+        <p>Sve cene su sa uračunatim PDV-om i važe samo za online kupovinu! </p>
+        <p>&copy; Copyright 2021. | Made by <span>J&T Studio Design</span> | Sva prava zadržana</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
